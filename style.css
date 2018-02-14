@@ -1,7 +1,7 @@
 *{box-sizing: border-box;}
 body{background-color: lightgreen;max-width:1200px;margin:0 auto;
-display:grid;grid-gap: 16px;position:static;}
-header,aside,main,footer{border:1px solid gray;}
+display:grid;grid-template-rows:150px auto auto auto 50px;grid-gap: 16px;position:static;}
+header,aside,main,footer{border:1px solid gray;background-color: lightgrey;}
 header{display:grid;grid-template-columns:25% 50% 25%;}
 aside{}
 main{}
