@@ -1,8 +1,8 @@
 *{box-sizing: border-box;}
 body{background-color: lightgreen;max-width:1200px;margin:0 auto;
-display:grid;grid-gap: 16px;position:static;}
-header,aside,main,footer{border:1px solid gray;}
-header{}
+display:grid;grid-template-rows:150px auto auto auto 50px;grid-gap: 16px;position:static;}
+header,aside,main,footer{border:1px solid gray;background-color: lightgrey;}
+header{display:grid;grid-template-columns:25% 50% 25%;}
 aside{}
 main{}
 footer{position:fixed;bottom:0px;}
@@ -10,7 +10,7 @@ h1,h2{color: #000d59;
     font-size: 1.4em;
     margin: 0 0 1em 0;}
 aside h2{border-bottom: 2px dotted #000d59}
-.knop{padding: 5px 10px 5px 10px;
+.button{padding: 5px 10px 5px 10px;
     background: #3cbb53;
     font-family: "UbuntuRegular",Arial,Helvetica,sans-serif;
     color: #fff;
