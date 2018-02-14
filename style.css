@@ -1,0 +1,17 @@
+*{box-sizing: border-box;}
+body{background-color: lightgreen;max-width:1200px;margin:0 auto;
+display:grid;grid-gap: 16px;}
+header,aside,main,footer{border:1px solid gray;}
+header{}
+aside{}
+main{}
+footer{}
+@media (min-width:400px) {
+    body{grid-template-columns:25% 75%;grid-template-rows:150px auto auto 50px;}
+    header,footer,#rechts {grid-column-start: 1;grid-column-end: 3;}
+}
+@media (min-width:800px) {
+    body{grid-template-columns:25% 50% 25%;grid-template-rows:150px auto 50px;}
+    #rechts {grid-column-start: 3;grid-column-end: 4;}
+    header,footer {grid-column-start: 1;grid-column-end: 4;}
+}
