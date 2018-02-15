@@ -1,8 +1,16 @@
-*{box-sizing: border-box;}
-body{background-color: lightgreen;max-width:1200px;margin:0 auto;
+{box-sizing: border-box;}
+body{
+    background-color: lightgreen;
+}
+.container{max-width:1200px;margin:0 auto;
 display:grid;grid-template-rows:150px auto auto auto 50px;grid-gap: 16px;position:static;}
 header,aside,main,footer{border:1px solid gray;background-color: lightgrey;}
 header{display:grid;grid-template-columns:25% 50% 25%;}
+.content{
+    display:grid;
+    grid-template-columns:25% 50% 25%;
+    grid-gap: 16px;
+}
 aside{}
 main{}
 footer{position:fixed;bottom:0px;width:100%;}
